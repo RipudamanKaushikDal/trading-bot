@@ -4,7 +4,7 @@ from stock_scraper import YahooFinanceScraper
 from data_manipulator import DataManipulator
 
 
-symbol = "BTC-CAD"
+symbol = "ETH-CAD"
 
 
 def retreive_data():
@@ -63,6 +63,6 @@ scheduler = sched.scheduler(time.time, time.sleep)
 i = 0
 
 while i <= 10:
-    scheduler.enter(5, 1, retreive_data)
+    scheduler.enter(50, 1, retreive_data)
     scheduler.run()
     i += 1
