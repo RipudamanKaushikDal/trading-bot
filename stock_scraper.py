@@ -1,6 +1,3 @@
-from typing import List
-from unittest import result
-from wsgiref import headers
 import aiohttp
 import asyncio
 from bs4 import BeautifulSoup
